@@ -1,0 +1,27 @@
+librosa
+numpy
+scipy
+s3tokenizer
+diffusers
+torch==2.7.1
+torchaudio==2.7.1
+triton>=3.0.0
+transformers==4.57.1
+accelerate==1.10.1
+onnxruntime
+onnxruntime-gpu
+einops
+gradio
+# FastAPI and web framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Pydantic for data validation
+pydantic>=2.0.0
+
+# Audio processing
+scipy>=1.11.0
+
+# Logging and utilities
+aiofiles>=23.2.0

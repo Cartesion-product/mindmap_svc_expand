@@ -1,0 +1,82 @@
+{
+  "port": 5003,
+  "mode": "dev",
+  "log": {
+    "log_name": "AppLogger",
+    "log_level": "info",
+    "log_time_format": "regular",
+    "log_file_enabled": true,
+    "log_folder_name": "logs",
+    "log_file_name_format": "%Y%m%d",
+    "log_file_ext": ".log",
+    "log_max_size": 10485760,
+    "log_backup_count": 3
+  },
+  "env": {
+    "KB_FRAMEWORK_DB": "mongodb://root:SophyVerse-v5@10.0.62.230:27017/admin",
+    "KB_FRAMEWORK_DB_1": "mongodb://localhost:27017/",
+
+    "KB_API_SERVICE_GLOBAL_TOKEN": "1effa9c3b68447c7b8dcac84ccaebd32",
+    "KB_API_SERVICE_AUTHENTICATION": "10.0.62.214:15000/api/v1/k-sys",
+    "KB_API_SERVICE_LLM": "10.0.62.214:15000/k-llm",
+    "KB_LLM_MODEL_ID": "qwen3-coder-plus",
+    "KB_LLM_MODEL_API_KEY": "sk-u-1515e7f5d71d42daadb700951e5cf226",
+
+    "KB_MINIO_ENDPOINT":"10.0.62.206:59003",
+    "KB_MINIO_ACCESSKEY": "admin",
+    "KB_MINIO_SECRETKEY": "SophyVerse-v5",
+    "KB_MINIO_SECURE": false,
+
+    "SYSTEM_MINDMAP_MINIO_BUCKET": "kb-mindmap-system",
+    "USER_MINDMAP_MINIO_BUCKET": "kb-mindmap-user",
+
+    "EMBEDDING_BINDING": "openai",
+    "EMBEDDING_BINDING_HOST": "http://10.0.62.206:51200/v1",
+    "EMBEDDING_MODEL": "Qwen3-Embedding-0.6B",
+    "EMBEDDING_DIM": "1024",
+    "EMBEDDING_BINDING_API_KEY": "sk-uHj8K2mNpL5vR9xQ4tY7wB3cA6nE0iF1gD8sZ2yX4jM9kP3h",
+
+    "LIGHTRAG_VECTOR_STORAGE": "QdrantVectorDBStorage",
+
+    "API_DATA_SERVER_URL": "",
+
+    "ONLY_NEED_CONTEXT": "False",
+
+    "ENABLE_CHART_GENERATION": "False",
+
+    "RAG_LLM_API_KEY": "sk-u-1515e7f5d71d42daadb700951e5cf226",
+    "RAG_LLM_BASE_URL": "http://61.160.97.222:15000/k-llm/v1",
+    "LLM_MODEL": "gemini-3-flash",
+    "RAG_LLM_MAX_TOKENS": "16000",
+
+    "EMBEDDING_BASE_URL": "http://10.0.62.206:51200/v1",
+    "EMBEDDING_API_KEY": "sk-uHj8K2mNpL5vR9xQ4tY7wB3cA6nE0iF1gD8sZ2yX4jM9kP3h",
+
+    "IMAGE_SIZE": "2K",
+    "IMAGE_RESOLUTION": "16:9",
+
+    "IMAGE_GEN_PROVIDER": "doubao",
+    "IMAGE_GEN_API_KEY": "e4c2b549-f2dc-483e-ad46-3888de33cac4",
+    "GOOGLE_GENAI_BASE_URL": "https://ark.cn-beijing.volces.com/api/v3",
+    "IMAGE_GEN_MODEL": "doubao-seedream-4-5-251128",
+
+    "IMAGE_GEN_RESPONSE_MIME_TYPE": "image/png",
+    "IMAGE_GEN_BASE_URL": "",
+
+    "PARSER": "mineru",
+    "PARSER_ENABLED": "False",
+
+    "CELERY_BROKER_URL": "redis://:123456@localhost:6379/0",
+    "CELERY_RESULT_BACKEND": "redis://:123456@localhost:6379/1",
+
+    "KNOWLEDGE_DB_NAME": "SV_KNOWLEDGE_DB",
+
+    "SLIDES_MONGO_DB": "SV_USER_DB",
+    "SLIDES_SYSTEM_PAPER_COLLECTION": "system_paper_agent_result",
+    "SLIDES_USER_PAPER_COLLECTION": "user_paper_agent_result",
+
+    "SLIDES_MAX_RUNNING_TASKS": "2",
+    "SLIDES_MAX_WAITING_TASKS": "5",
+    "SLIDES_RESET_WAITING_ON_RESTART": "true"
+  }
+}
